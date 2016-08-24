@@ -52,7 +52,7 @@ placeholder="Add tags ..."
 [model]="tagsArray"
 (tagsChanged)="onTagsChange($event)"
 (tagsAdded)="onTagsAdded($event)"
-(tasRemoved)="onTagRemoved($event)"
+(tagRemoved)="onTagRemoved($event)"
 >
 ```
 
@@ -71,4 +71,5 @@ Where **model** is the array of elements which will have the resulting tags list
 ## Outputs(Events)
 
 - `tagsChanged` : `string[]` - Fires when tags list is changed in any way.
-- `tagsAdded` : `string[]` - Fires when tags list is changed in any way.
+- `tagsAdded` : `string[]` - Fires when tags are added.
+- `tagRemoved` : `string[]` - Fires when tag is removed.
