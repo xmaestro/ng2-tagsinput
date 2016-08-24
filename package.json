@@ -1,0 +1,28 @@
+{
+  "name": "ng2-tagsinput",
+  "version": "0.0.1",
+  "description": "Typescript component for Tag Input",
+  "main": "ng2-tagsinput.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xmaestro/ng2-tagsinput.git"
+  },
+  "keywords": [
+    "ng2-tags-input",
+    "ng2-tag-input",
+    "ng2-tags-input",
+    "ng2-tagsinput"
+  ],
+  "author": "xmaestro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xmaestro/ng2-tagsinput/issues"
+  },
+  "homepage": "https://github.com/xmaestro/ng2-tagsinput#readme",
+  "dependencies": {
+    "@angular/core": "^2.0.0-rc.5"
+  }
+}
