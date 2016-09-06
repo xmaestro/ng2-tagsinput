@@ -143,11 +143,10 @@ export class Ng2TagsInput {
 
     private _handleBackspace() {
         if (!this.inputValue.length && this.tagsList.length) {
-            if (this.selectedTag) {
+            if (!this.selectedTag) {
                 this.selectedTag = this.tagsList.length - 1;
-            } else {
-                this._removeTag(this.selectedTag);
-            }
+            } 
+            this._removeTag(this.selectedTag);            
         }
     }
 
