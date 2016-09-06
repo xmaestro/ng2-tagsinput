@@ -28,17 +28,17 @@ System.config({
 });
 ```
 
-### Component
+### Module
 
 ```typescript
-import {Ng2TagsInput} from 'ng2-tagsinput/ng2-tagsinput';
+import {Ng2TagsInputModule} from 'ng2-tagsinput/ng2-tagsinput';
 ```
 
 ```typescript
  ...
-@Component({
-  directives: [Ng2TagsInput]
-  })
+ @NgModule({
+   imports: [...,Ng2TagsInputModule]
+   })
   ...
 ```
 

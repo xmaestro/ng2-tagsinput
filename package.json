@@ -1,6 +1,6 @@
 {
   "name": "ng2-tagsinput",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Typescript component for Tag Input",
   "main": "ng2-tagsinput.js",
   "scripts": {
@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/xmaestro/ng2-tagsinput#readme",
   "dependencies": {
-    "@angular/core": "^2.0.0-rc.5"
+    "@angular/core": "^2.0.0-rc.6"
   }
 }
