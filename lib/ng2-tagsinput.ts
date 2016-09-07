@@ -1,5 +1,4 @@
 import {Component, HostBinding, Input, EventEmitter, Output} from '@angular/core';
-import {Ng2TagsInputItem} from './ng2-tagsinput-item';
 
 @Component({
   selector: 'tag-input',
@@ -36,8 +35,7 @@ import {Ng2TagsInputItem} from './ng2-tagsinput-item';
       box-shadow: none;
       border: 0;
     }
-  `],
-  directives: [Ng2TagsInputItem]
+  `]
 })
 
 export class Ng2TagsInput {
