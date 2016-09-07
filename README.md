@@ -31,13 +31,13 @@ System.config({
 ### Module
 
 ```typescript
-import {Ng2TagsInputModule} from 'ng2-tagsinput/ng2-tagsinput';
+import {NG2_TAG_INPUT_COMPONENTS} from 'ng2-tagsinput/ng2-tagsinput';
 ```
 
 ```typescript
  ...
  @NgModule({
-   imports: [...,Ng2TagsInputModule]
+   declarations: [...,NG2_TAG_INPUT_COMPONENTS]
    })
   ...
 ```
