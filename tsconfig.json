@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "declaration": true
+  },
+  "files": [
+    "ng2-tagsinput.ts"
+  ],
+    "exclude": [
+        "node_modules"
+  ]
+}
