@@ -8,6 +8,9 @@ import { Ng2TagsInput } from "./lib/ng2-tagsinput";
     declarations: [
         Ng2TagsInputItem,
         Ng2TagsInput],
+    exports: [
+        Ng2TagsInputItem,
+        Ng2TagsInput],
     imports:[
         CommonModule,
         FormsModule,

@@ -1,6 +1,6 @@
 {
   "name": "ng2-tagsinput",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Typescript component for Tag Input",
   "main": "ng2-tagsinput.js",
   "scripts": {
