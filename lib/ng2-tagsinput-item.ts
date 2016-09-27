@@ -7,7 +7,6 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   <span
   class="ng2-tag-input-remove"
   (click)="removeTag()">&times;</span>`,
-
   styles: [`
     :host {
       display: inline-block;
@@ -16,12 +15,10 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
       border-radius: 90px;
       margin-right: 10px;
     }
-
     :host.ng2-tag-input-item-selected {
       color: white;
       background: #0d8bff;
     }
-
     .ng2-tag-input-remove {
       cursor: pointer;
       display: inline-block;
@@ -38,9 +35,10 @@ export class Ng2TagsInputItem {
   @Input() index: number;
   @Output() tagRemoved: EventEmitter<number> = new EventEmitter<number>();
 
-  constructor() { }
+  constructor() {}
 
   removeTag() {
     this.tagRemoved.emit(this.index);
   }
+
 }

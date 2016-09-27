@@ -1,9 +1,12 @@
-# dependencies
 node_modules
 typings
+factories
+
 
 # misc
 *.log
-
-#webstorm
+.history
 .idea
+*.d.ts
+*.js
+*.metadata.json

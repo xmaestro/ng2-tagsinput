@@ -1,5 +1,7 @@
 README.md
 tsconfig.json
 .npmignore
+.history
 *.ts
 !*.d.ts
+factories

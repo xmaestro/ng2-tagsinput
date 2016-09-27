@@ -47,12 +47,11 @@ export class Ng2TagsInput {
     @Input() addOnEnter: boolean = true;
     @Input() addOnPaste: boolean = true;
     @Input() allowedTagsPattern: RegExp = /.+/;
+    
     @HostBinding('class.ng2-tag-input-focus') isFocussed;
 
     @Output() tagsChanged:EventEmitter<any> = null;
-
     @Output() tagsAdded:EventEmitter<any> = null;
-
     @Output() tagRemoved:EventEmitter<any> = null;
 
     public tagsList:string[] = [];
