@@ -1,3 +1,6 @@
+
+[![Build Status](https://travis-ci.org/xmaestro/ng2-tagsinput.svg?branch=master)](https://travis-ci.org/xmaestro/ng2-tagsinput)
+
 # Angular 2 : Typescript component for Tags Input
 
 An improved version of [angular2-tag-input](https://github.com/rosslavery/angular2-tag-input)
@@ -25,19 +28,25 @@ System.config({
       ...
     }
     ...
+    packages: {
+      ...
+      'ng2-tagsinput': { defaultExtension: 'js', main:'index' }
+      ...
+    }
+    ...
 });
 ```
 
 ### Module
 
 ```typescript
-import {NG2_TAG_INPUT_COMPONENTS} from 'ng2-tagsinput/ng2-tagsinput';
+import {Ng2TagsInputModule} from 'ng2-tagsinput';
 ```
 
 ```typescript
  ...
  @NgModule({
-   declarations: [...,NG2_TAG_INPUT_COMPONENTS]
+   imports: [...,Ng2TagsInputModule]
    })
   ...
 ```
