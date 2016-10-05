@@ -7,6 +7,7 @@ import {Component, HostBinding, Input, EventEmitter, Output} from '@angular/core
     [text]="tag"
     [index]="index"
     [selected]="selectedTag === index"
+    [disabled]="disabled"
     (tagRemoved)="_removeTag($event)"
     *ngFor="let tag of tagsList; let index = index">
   </tag-input-item>
@@ -19,6 +20,7 @@ import {Component, HostBinding, Input, EventEmitter, Output} from '@angular/core
     (keydown)="inputChanged($event)"
     (blur)="inputBlurred($event)"
     (focus)="inputFocused()"
+    [disabled]="disabled"
     #tagInputRef>`,
   styles: [`
     :host {
@@ -41,13 +43,14 @@ import {Component, HostBinding, Input, EventEmitter, Output} from '@angular/core
 export class Ng2TagsInput {
 
     @Input() placeholder: string = 'Add a tag';
+    @Input() disabled: boolean = false;
     @Input() model: string[];
     @Input() delimiterCode: string = '188';
     @Input() addOnBlur: boolean = true;
     @Input() addOnEnter: boolean = true;
     @Input() addOnPaste: boolean = true;
     @Input() allowedTagsPattern: RegExp = /.+/;
-    
+
     @HostBinding('class.ng2-tag-input-focus') isFocussed;
 
     @Output() tagsChanged:EventEmitter<any> = null;
@@ -142,8 +145,8 @@ export class Ng2TagsInput {
         if (!this.inputValue.length && this.tagsList.length) {
             if (!this.selectedTag) {
                 this.selectedTag = this.tagsList.length - 1;
-            } 
-            this._removeTag(this.selectedTag);            
+            }
+            this._removeTag(this.selectedTag);
         }
     }
 

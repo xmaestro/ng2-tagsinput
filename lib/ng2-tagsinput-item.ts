@@ -5,6 +5,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   template:
   `{{text}}
   <span
+  *ngIf="disabled==false"
   class="ng2-tag-input-remove"
   (click)="removeTag()">&times;</span>`,
   styles: [`
@@ -31,6 +32,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 })
 export class Ng2TagsInputItem {
   @Input() selected: boolean;
+  @Input() disabled: boolean = false;
   @Input() text: string;
   @Input() index: number;
   @Output() tagRemoved: EventEmitter<number> = new EventEmitter<number>();
