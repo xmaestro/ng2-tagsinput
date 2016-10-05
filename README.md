@@ -71,6 +71,7 @@ Where **model** is the array of elements which will have the resulting tags list
 
 - `model` : `string[]` - Model you want the tags list to bind to.
 - `placeholder` : `string` - **Default**: ``'Add a tag'`` - Placeholder for the `<input>` tag.
+- `disabled` : `boolean` - **Default**: `'false'` - Disables ability to add/remove tags.
 - `delimiterCode` : `Array<number>` - **Default**: ``'[188]'`` - Array of ASCII keycodes to split tags on. Defaults to comma.
 - `addOnBlur` : `boolean` - **Default**: `true` - Whether to attempt to add a tag when the input loses focus.
 - `addOnEnter` : `boolean` - **Default**: `true` - Whether to attempt to add a tag when the user presses enter.
