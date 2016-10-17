@@ -127,7 +127,7 @@ export class Ng2TagsInput {
 
     private _addTags(tags:string[]) {
         let validTags = tags.filter((tag) => this._isTagValid(tag));
-        this.tagsList = this.tagsList.concat(validTags);
+		Array.prototype.push.apply(this.tagsList, validTags);
         this._resetSelected();
         this._resetInput();
         this.tagsAdded.emit(validTags);
