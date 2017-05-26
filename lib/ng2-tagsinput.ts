@@ -19,7 +19,7 @@ import {Component, HostBinding, Input, EventEmitter, Output} from '@angular/core
     (paste)="inputPaste($event)"
     (keydown)="inputChanged($event)"
     (blur)="inputBlurred($event)"
-    (focus)="inputFocused()"
+    (focus)="inputFocused($event)"
     [disabled]="disabled"
     #tagInputRef>`,
   styles: [`
